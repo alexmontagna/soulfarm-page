@@ -62,7 +62,7 @@ You can customize this template to fit your project's specific details and requi
 <div align="center">
   <a href="https://wa.me/+393889081340?text=Ciao,%20Alex!%20Bentornato!">
      <img
-      src="./src/assets/cuore.svg"
+      src="./pixelcrew-job-test/src/assets/cuore.svg"
       width="800"
       height="400"
       alt="SVG Pixelcrew"
