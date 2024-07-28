@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'MADE Dillan';
+  src: url('./assets/fonts/MADE_Dillan.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'MADE Dillan', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote {
+    white-space: unset;
+    text-wrap  : balance;
+}
+
+p,
+li {
+    text-wrap : pretty;
+    text-align: left;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior   : smooth;
+  }
+  :has(:target) {
+      scroll-behavior   : smooth;
+      scroll-padding-top: 3rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+      animation-duration       : 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration      : 0.01ms !important;
+      scroll-behavior          : auto !important;
+  }
+}
